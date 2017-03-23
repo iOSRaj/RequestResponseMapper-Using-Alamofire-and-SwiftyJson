@@ -10,42 +10,42 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
+let baseURL = "http://nielsmouthaan.nl/backbase/"
 
 class APIController {
-    
+
     var appInfo: [UserDepartment]?
-    
-     static let sharedInstance: APIController = APIController()
-     var arrRes = [[String:AnyObject]]()
-    
-    
+
+    static let sharedInstance: APIController = APIController()
+    var arrRes = [[String: AnyObject]]()
+
+
     func listUser(_ requestPath: String, completionHandler: @escaping (NSError?) -> Void) {
-        
-        Alamofire.request("http://nielsmouthaan.nl/backbase/members.php").responseJSON { (responseData) -> Void in
+        Alamofire.request(baseURL + requestPath).responseJSON { (responseData) -> Void in
             if((responseData.result.value) != nil) {
                 let swiftyJsonVar = JSON(responseData.result.value!)
                 self.appInfo = []
+
                 if let resData = swiftyJsonVar["Launchpad"].arrayObject {
-                     self.arrRes = resData as! [[String:AnyObject]]
-                     let appList: UserDepartment = UserDepartment(userJson:self.arrRes, title: "Launchpad")
-                     self.appInfo?.append(appList)
+                    self.arrRes = resData as! [[String: AnyObject]]
+                    let appList: UserDepartment = UserDepartment(userJson: self.arrRes, title: "Launchpad")
+                    self.appInfo?.append(appList)
                 }
-                
+
                 if let resData = swiftyJsonVar["CXP"].arrayObject {
-                     self.arrRes = resData as! [[String:AnyObject]]
-                    let appList: UserDepartment = UserDepartment(userJson:self.arrRes, title: "CXP")
+                    self.arrRes = resData as! [[String: AnyObject]]
+                    let appList: UserDepartment = UserDepartment(userJson: self.arrRes, title: "CXP")
                     self.appInfo?.append(appList)
                 }
-                
+
                 if let resData = swiftyJsonVar["Mobile"].arrayObject {
-                    self.arrRes = resData as! [[String:AnyObject]]
-                    let appList: UserDepartment = UserDepartment(userJson:self.arrRes, title: "Mobile")
+                    self.arrRes = resData as! [[String: AnyObject]]
+                    let appList: UserDepartment = UserDepartment(userJson: self.arrRes, title: "Mobile")
                     self.appInfo?.append(appList)
                 }
-                
+
                 return completionHandler(nil)
-            }
-            else {
+            } else {
                 return completionHandler(responseData.result.error as NSError?)
             }
         }

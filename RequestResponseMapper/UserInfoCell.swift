@@ -8,19 +8,21 @@
 
 import UIKit
 
-class AppInfoCell: UITableViewCell {
+class UserInfoCell: UITableViewCell {
 
-    @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var subtitleLabel: UILabel!
-
+    @IBOutlet var name: UILabel!
+    @IBOutlet var email: UILabel!
+    @IBOutlet weak var avatar: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.avatar.layer.cornerRadius = 30
+        self.avatar.clipsToBounds = true
     }
 
     override func prepareForReuse() {
         super.prepareForReuse()
-        titleLabel.text = ""
+        name.text = ""
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
