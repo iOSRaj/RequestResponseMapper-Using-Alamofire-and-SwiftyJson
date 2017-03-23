@@ -72,6 +72,7 @@
                     <navigationItem key="navigationItem" id="sTO-Um-9Ai"/>
                     <connections>
                         <outlet property="tableView" destination="lQO-Ln-gLt" id="TpW-Tz-FzU"/>
+                        <segue destination="HjH-NJ-9Du" kind="presentation" id="9hp-M2-9i1"/>
                     </connections>
                 </viewController>
             </objects>
@@ -82,9 +83,13 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uti-PH-HK8" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2eh-rW-cXZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="2eh-rW-cXZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -94,6 +99,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q8U-bj-wmv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-357.60000000000002" y="73.313343328335833"/>
+        </scene>
+        <!--NoInternet-->
+        <scene sceneID="EBK-22-C5c">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="NoInternet" storyboardName="NoInternet" id="HjH-NJ-9Du" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2IW-uu-RjP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1468" y="73"/>
         </scene>
     </scenes>
 </document>

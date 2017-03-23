@@ -16,6 +16,9 @@
 		1BF520351E82BA71005F1C0C /* UserDepartment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF520341E82BA71005F1C0C /* UserDepartment.swift */; };
 		1BF520371E82BA7E005F1C0C /* UserItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF520361E82BA7E005F1C0C /* UserItem.swift */; };
 		1BF5203E1E82D603005F1C0C /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF5203D1E82D603005F1C0C /* UserInfoCell.swift */; };
+		1BF520461E83E68B005F1C0C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF520451E83E68B005F1C0C /* Reachability.swift */; };
+		1BF520481E83E7F3005F1C0C /* NoInternetConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF520471E83E7F3005F1C0C /* NoInternetConnectionController.swift */; };
+		1BF5204D1E8403F3005F1C0C /* NoInternet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF5204C1E8403F3005F1C0C /* NoInternet.storyboard */; };
 		6A4898AF0AEBBCD46CBB4A96 /* Pods_AbstractTarget_RequestResponseMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3757B8C5B5E10D38D3A5EAD /* Pods_AbstractTarget_RequestResponseMapper.framework */; };
 		A6566D2F3F2EA221B9C663A8 /* Pods_RequestResponseMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A36CA8C2FC70DC829869D3EC /* Pods_RequestResponseMapper.framework */; };
 /* End PBXBuildFile section */
@@ -32,6 +35,9 @@
 		1BF520341E82BA71005F1C0C /* UserDepartment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDepartment.swift; sourceTree = "<group>"; };
 		1BF520361E82BA7E005F1C0C /* UserItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserItem.swift; sourceTree = "<group>"; };
 		1BF5203D1E82D603005F1C0C /* UserInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
+		1BF520451E83E68B005F1C0C /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		1BF520471E83E7F3005F1C0C /* NoInternetConnectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetConnectionController.swift; sourceTree = "<group>"; };
+		1BF5204C1E8403F3005F1C0C /* NoInternet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NoInternet.storyboard; sourceTree = "<group>"; };
 		A36CA8C2FC70DC829869D3EC /* Pods_RequestResponseMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RequestResponseMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5078E2B23E08A393B496FB /* Pods-AbstractTarget-RequestResponseMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbstractTarget-RequestResponseMapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AbstractTarget-RequestResponseMapper/Pods-AbstractTarget-RequestResponseMapper.debug.xcconfig"; sourceTree = "<group>"; };
 		E3757B8C5B5E10D38D3A5EAD /* Pods_AbstractTarget_RequestResponseMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AbstractTarget_RequestResponseMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,15 +87,15 @@
 		1BF5201C1E8165C1005F1C0C /* RequestResponseMapper */ = {
 			isa = PBXGroup;
 			children = (
-				1BF520441E83E644005F1C0C /* LaunchScreen */,
-				1BF520431E83E63B005F1C0C /* Resources */,
-				1BF520421E83E62D005F1C0C /* Assets */,
+				1BF520391E82BA8E005F1C0C /* API */,
 				1BF520411E83E61E005F1C0C /* AppDelegate */,
+				1BF520421E83E62D005F1C0C /* Assets */,
+				1BF520441E83E644005F1C0C /* LaunchScreen */,
+				1BF520381E82BA82005F1C0C /* Model */,
+				1BF520431E83E63B005F1C0C /* Resources */,
 				1BF520401E83E611005F1C0C /* Storyboard */,
 				1BF5203F1E83E601005F1C0C /* Utils */,
-				1BF520381E82BA82005F1C0C /* Model */,
 				1BF5203A1E82BA98005F1C0C /* ViewController */,
-				1BF520391E82BA8E005F1C0C /* API */,
 			);
 			path = RequestResponseMapper;
 			sourceTree = "<group>";
@@ -116,6 +122,7 @@
 			children = (
 				1BF5201F1E8165C1005F1C0C /* ViewController.swift */,
 				1BF5203D1E82D603005F1C0C /* UserInfoCell.swift */,
+				1BF520471E83E7F3005F1C0C /* NoInternetConnectionController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -123,6 +130,7 @@
 		1BF5203F1E83E601005F1C0C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1BF520451E83E68B005F1C0C /* Reachability.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -131,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				1BF520211E8165C1005F1C0C /* Main.storyboard */,
+				1BF5204C1E8403F3005F1C0C /* NoInternet.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -240,6 +249,7 @@
 			files = (
 				1BF520281E8165C1005F1C0C /* LaunchScreen.storyboard in Resources */,
 				1BF520251E8165C1005F1C0C /* Assets.xcassets in Resources */,
+				1BF5204D1E8403F3005F1C0C /* NoInternet.storyboard in Resources */,
 				1BF520231E8165C1005F1C0C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +309,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BF520461E83E68B005F1C0C /* Reachability.swift in Sources */,
+				1BF520481E83E7F3005F1C0C /* NoInternetConnectionController.swift in Sources */,
 				1BF520371E82BA7E005F1C0C /* UserItem.swift in Sources */,
 				1BF520201E8165C1005F1C0C /* ViewController.swift in Sources */,
 				1BF5201E1E8165C1005F1C0C /* AppDelegate.swift in Sources */,

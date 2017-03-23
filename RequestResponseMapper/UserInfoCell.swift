@@ -1,9 +1,9 @@
 //
-//  AppInfoCell.swift
-//  NewFAS
+//  UserInfoCell.swift
+//  RequestResponseMapper
 //
-//  Created by tcs on 3/22/16.
-//  Copyright © 2016 Raj. All rights reserved.
+//  Created by tcs on 3/21/17.
+//  Copyright © 2017 Raj. All rights reserved.
 //
 
 import UIKit
