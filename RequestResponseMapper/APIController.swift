@@ -44,9 +44,9 @@ class APIController {
                     self.appInfo?.append(appList)
                 }
 
-                return completionHandler(nil)
+                 completionHandler(nil)
             } else {
-                return completionHandler(responseData.result.error as NSError?)
+                 completionHandler(responseData.result.error as NSError?)
             }
         }
     }

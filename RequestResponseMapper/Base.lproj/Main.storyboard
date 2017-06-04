@@ -28,7 +28,7 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="USERINFO" rowHeight="126" id="gHS-3r-APS" customClass="UserInfoCell" customModule="RequestResponseMapper" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="126"/>
+                                        <rect key="frame" x="0.0" y="56" width="375" height="126"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gHS-3r-APS" id="JwA-KI-vfz">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>

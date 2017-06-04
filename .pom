@@ -1,0 +1,18 @@
+# POM file for the cibuild build script
+
+# Name prefix for tagged version
+APP_NAME="RequestResponseMapper"
+
+##########################
+#### Snapshot section ####
+##########################
+
+# Schemes to build
+APP_SCHEMES=(
+	"RequestResponseMapper-Debug"
+)
+
+# App Info.plists (position matched with APP_SCHEMES array)
+INFO_PLISTS=(
+	"RequestResponseMapper/Info.plist"
+)
