@@ -39,7 +39,6 @@
 		1BF520471E83E7F3005F1C0C /* NoInternetConnectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetConnectionController.swift; sourceTree = "<group>"; };
 		1BF5204C1E8403F3005F1C0C /* NoInternet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NoInternet.storyboard; sourceTree = "<group>"; };
 		911EC4441EE420FA003BA50C /* .pom */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .pom; sourceTree = "<group>"; };
-		A36CA8C2FC70DC829869D3EC /* Pods_RequestResponseMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RequestResponseMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5078E2B23E08A393B496FB /* Pods-AbstractTarget-RequestResponseMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbstractTarget-RequestResponseMapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AbstractTarget-RequestResponseMapper/Pods-AbstractTarget-RequestResponseMapper.debug.xcconfig"; sourceTree = "<group>"; };
 		E3757B8C5B5E10D38D3A5EAD /* Pods_AbstractTarget_RequestResponseMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AbstractTarget_RequestResponseMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1A3BB39AEF82B52E38ECB4 /* Pods-AbstractTarget-RequestResponseMapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbstractTarget-RequestResponseMapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-AbstractTarget-RequestResponseMapper/Pods-AbstractTarget-RequestResponseMapper.release.xcconfig"; sourceTree = "<group>"; };
@@ -60,7 +59,6 @@
 		0CBEC10803A83082941FA170 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A36CA8C2FC70DC829869D3EC /* Pods_RequestResponseMapper.framework */,
 				E3757B8C5B5E10D38D3A5EAD /* Pods_AbstractTarget_RequestResponseMapper.framework */,
 			);
 			name = Frameworks;
@@ -222,7 +220,7 @@
 					1BF520191E8165BC005F1C0C = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = X2J5768T7W;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -366,7 +364,9 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: rajkumar k (W5V3W5JAZ3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: rajkumar k (W5V3W5JAZ3)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = X2J5768T7W;
@@ -389,7 +389,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "46bd2e4c-d9a4-4676-9e6d-f16ab3c30a4e";
+				PROVISIONING_PROFILE = "2dc8c05c-e694-4031-aacd-4660d067c7b4";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -417,7 +417,9 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: rajkumar k (W5V3W5JAZ3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: rajkumar k (W5V3W5JAZ3)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = X2J5768T7W;
@@ -433,7 +435,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "46bd2e4c-d9a4-4676-9e6d-f16ab3c30a4e";
+				PROVISIONING_PROFILE = "2dc8c05c-e694-4031-aacd-4660d067c7b4";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -445,15 +447,16 @@
 			baseConfigurationReference = BE5078E2B23E08A393B496FB /* Pods-AbstractTarget-RequestResponseMapper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: rajkumar k (W5V3W5JAZ3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: rajkumar k (W5V3W5JAZ3)";
 				DEVELOPMENT_TEAM = X2J5768T7W;
 				INFOPLIST_FILE = RequestResponseMapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pvh.testBamboo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "b352427f-079d-4a02-910f-0e5565122806";
+				PROVISIONING_PROFILE_SPECIFIER = "com.pvh.testBamboo Development";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -463,15 +466,16 @@
 			baseConfigurationReference = FD1A3BB39AEF82B52E38ECB4 /* Pods-AbstractTarget-RequestResponseMapper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: rajkumar k (W5V3W5JAZ3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: rajkumar k (W5V3W5JAZ3)";
 				DEVELOPMENT_TEAM = X2J5768T7W;
 				INFOPLIST_FILE = RequestResponseMapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pvh.testBamboo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "b352427f-079d-4a02-910f-0e5565122806";
+				PROVISIONING_PROFILE_SPECIFIER = "com.pvh.testBamboo Development";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
